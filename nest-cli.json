@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/lifexplay/src",
+  "monorepo": true,
+  "root": "apps/lifexplay",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/lifexplay/tsconfig.app.json"
+  },
+  "projects": {
+    "lifexplay": {
+      "type": "application",
+      "root": "apps/lifexplay",
+      "entryFile": "main",
+      "sourceRoot": "apps/lifexplay/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lifexplay/tsconfig.app.json"
+      }
+    },
+    "lifexplay-backoffice": {
+      "type": "application",
+      "root": "apps/lifexplay-backoffice",
+      "entryFile": "main",
+      "sourceRoot": "apps/lifexplay-backoffice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lifexplay-backoffice/tsconfig.app.json"
+      }
+    },
+    "lifexplay-users": {
+      "type": "application",
+      "root": "apps/lifexplay-users",
+      "entryFile": "main",
+      "sourceRoot": "apps/lifexplay-users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lifexplay-users/tsconfig.app.json"
+      }
+    },
+    "lifexplay-client-support": {
+      "type": "application",
+      "root": "apps/lifexplay-client-support",
+      "entryFile": "main",
+      "sourceRoot": "apps/lifexplay-client-support/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lifexplay-client-support/tsconfig.app.json"
+      }
+    }
+  }
+}
